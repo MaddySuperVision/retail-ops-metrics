@@ -1,0 +1,73 @@
+# Retail store operations metrics
+
+Plain definitions, formulas and free templates for measuring what happens on a retail store floor: customer-to-staff ratio, checkout wait time, scheduled vs deployed labor, and why sales per labor hour can hide understaffing.
+
+Maintained by [Super Vision](https://www.supervision.work/), which builds operational intelligence for multi-location retail from the cameras stores already have. Everything here works without our product: a door counter, your POS and a spreadsheet are enough to start.
+
+## Contents
+
+| File | What it is |
+|---|---|
+| [hourly-coverage.csv](hourly-coverage.csv) | Hour-by-hour template: entries, shoppers present, associates scheduled and on the floor, transactions |
+| [queue-snapshots.csv](queue-snapshots.csv) | Checkout line count template for a two-hour peak window |
+| [store_metrics.py](store_metrics.py) | Small Python calculator (no dependencies) for the formulas below, run against the templates |
+
+## Customer-to-staff ratio
+
+Two different measurements share this name.
+
+**Flow ratio (planning):** shopper entries in an hour divided by staff hours worked in that hour.
+
+**Concurrent ratio (service):** average shoppers present divided by average associates actually on the sales floor.
+
+Estimate shoppers present with Little's Law:
+
+```
+shoppers present ≈ entries per hour × average visit length (hours)
+```
+
+60 entries an hour with a 17 minute average visit is about 17 shoppers present.
+
+Measure by hour and by zone, never as a daily average. Set your threshold from your own data: bucket four weeks of hours by ratio and find where conversion starts to drop.
+
+Full guide: [Customer-to-staff ratio in retail](https://www.supervision.work/guides/customer-to-staff-ratio/)
+
+## Checkout wait time
+
+- **Wait time:** joining the line until reaching the register. Your POS cannot see it.
+- **Service time:** the transaction itself. This is what POS timestamps measure.
+- **Balking:** a shopper sees the line and never joins. **Reneging:** joins, then leaves. Neither reaches the POS.
+
+Estimate average wait without a stopwatch (Little's Law):
+
+```
+average wait (minutes) = average queue length ÷ checkouts completed per minute
+```
+
+Report the median and 90th percentile wait, minutes per day above your target, peak line length, and whether every register that should have been open was staffed in those minutes. Rank stores by minutes above target, not average wait.
+
+Full guide: [How to measure checkout wait time](https://www.supervision.work/guides/checkout-wait-time/)
+
+## Sales per labor hour
+
+```
+SPLH = net sales ÷ labor hours worked
+```
+
+SPLH tends to rise when a store runs short at peak: hours fall, and sales lost to unattended shoppers and long lines never appear anywhere. Read it next to hourly conversion and minutes above your checkout target.
+
+## Scheduled vs deployed labor
+
+Scheduled is who is on the rota. Deployed is who is on the floor, at the right position, in that hour. Breaks, receiving, replenishment and online order picking create the gap, and it is usually largest in the busiest hour.
+
+## Research worth reading
+
+- Perdikaki, Kesavan, Swaminathan (2012). Effect of traffic on sales and conversion rates of retail stores. *Manufacturing & Service Operations Management*. DOI 10.1287/msom.1110.0356
+- Mani, Kesavan, Swaminathan (2015). Estimating the impact of understaffing on sales and profitability in retail stores. *Production and Operations Management*. All 41 stores studied were systematically understaffed during peak hours.
+- Lu, Musalem, Olivares, Schilkrut (2013). Measuring the effect of queues on customer purchases. *Management Science*. DOI 10.1287/mnsc.1120.1686
+- Chuang, Oliva, Perdikaki (2016). Traffic-based labor planning in retail stores. *Production and Operations Management*.
+- Knowledge at Wharton (2019). [Retail's big mistake: slashing payroll cuts into profits](https://knowledge.wharton.upenn.edu/article/retail-staffing-model)
+
+## License
+
+MIT for the code, CC BY 4.0 for the text and templates. Use them, change them, share them.

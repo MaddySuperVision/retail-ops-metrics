@@ -1,0 +1,11 @@
+date,store,zone,hour,entries,avg_visit_minutes,associates_scheduled,associates_on_floor,transactions
+2026-10-10,Example store (hypothetical),Whole store,10:00,22,17,3,3,6
+2026-10-10,Example store (hypothetical),Whole store,11:00,38,17,3,2,9
+2026-10-10,Example store (hypothetical),Whole store,12:00,61,17,4,3,14
+2026-10-10,Example store (hypothetical),Whole store,13:00,70,17,4,2,13
+2026-10-10,Example store (hypothetical),Whole store,14:00,52,17,4,4,15
+2026-10-10,Example store (hypothetical),Whole store,15:00,44,17,4,4,13
+2026-10-10,Example store (hypothetical),Whole store,16:00,49,17,3,3,13
+2026-10-10,Example store (hypothetical),Whole store,17:00,66,17,3,3,15
+2026-10-10,Example store (hypothetical),Whole store,18:00,58,17,3,2,12
+2026-10-10,Example store (hypothetical),Whole store,19:00,31,17,2,2,8
