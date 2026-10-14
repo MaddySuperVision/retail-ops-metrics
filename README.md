@@ -11,6 +11,7 @@ Maintained by [Super Vision](https://www.supervision.work/), which builds operat
 | [hourly-coverage.csv](hourly-coverage.csv) | Hour-by-hour template: entries, shoppers present, associates scheduled and on the floor, transactions |
 | [queue-snapshots.csv](queue-snapshots.csv) | Checkout line count template for a two-hour peak window |
 | [store_metrics.py](store_metrics.py) | Small Python calculator (no dependencies) for the formulas below, run against the templates |
+| [Google Sheets calculator](https://docs.google.com/spreadsheets/d/17FrI0pWOV8FY-quwBtz-fyPrtT3dUH7uoOvv97SaCUg/copy) | Free Google Sheets version of both templates with the formulas built in (hypothetical example data). The link makes your own editable copy |
 
 ## Customer-to-staff ratio
 
