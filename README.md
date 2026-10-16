@@ -57,6 +57,8 @@ SPLH = net sales ÷ labor hours worked
 
 SPLH tends to rise when a store runs short at peak: hours fall, and sales lost to unattended shoppers and long lines never appear anywhere. Read it next to hourly conversion and minutes above your checkout target.
 
+Full guide: [Is sales per labor hour a good KPI?](https://www.supervision.work/guides/sales-per-labor-hour/)
+
 ## Scheduled vs deployed labor
 
 Scheduled is who is on the rota. Deployed is who is on the floor, at the right position, in that hour. Breaks, receiving, replenishment and online order picking create the gap, and it is usually largest in the busiest hour.
