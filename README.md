@@ -63,6 +63,15 @@ Full guide: [Is sales per labor hour a good KPI?](https://www.supervision.work/g
 
 Scheduled is who is on the rota. Deployed is who is on the floor, at the right position, in that hour. Breaks, receiving, replenishment and online order picking create the gap, and it is usually largest in the busiest hour.
 
+```
+deployment rate = deployed hours ÷ worked hours (same time block)
+coverage gap = customer-facing hours scheduled − deployed hours (same time block)
+```
+
+Six associates clocked in from 12:00 to 13:00 with floor counts averaging 3.5 is a 58% deployment rate. Read both by hour or 15-minute block, never only for the day.
+
+Full guide: [Scheduled vs deployed labor in retail](https://www.supervision.work/guides/scheduled-vs-deployed-labor/)
+
 ## Research worth reading
 
 - Perdikaki, Kesavan, Swaminathan (2012). Effect of traffic on sales and conversion rates of retail stores. *Manufacturing & Service Operations Management*. DOI 10.1287/msom.1110.0356
