@@ -31,6 +31,15 @@ shoppers present ≈ entries per hour × average visit length (hours)
 
 Measure by hour and by zone, never as a daily average. Set your threshold from your own data: bucket four weeks of hours by ratio and find where conversion starts to drop.
 
+**Labor-to-traffic ratio:** the flow ratio read the other way, labor hours per 100 entries. State the direction every time, because the names are used loosely.
+
+```
+labor-to-traffic ratio = staff hours in the hour ÷ shopper entries in the hour × 100
+peak-hour maximum ratio = highest hourly (shoppers present ÷ associates on the floor) in the day
+```
+
+Report the peak-hour maximum and the hour it happened next to the daily average and the number of hours above your threshold. A day can average 5 shoppers per associate on the floor and still reach 10 at 13:00.
+
 Full guide: [Customer-to-staff ratio in retail](https://www.supervision.work/guides/customer-to-staff-ratio/)
 
 ## Checkout wait time
