@@ -2,7 +2,7 @@
 
 Plain definitions, formulas and free templates for measuring what happens on a retail store floor: customer-to-staff ratio, checkout wait time, scheduled vs deployed labor, and why sales per labor hour can hide understaffing.
 
-Maintained by [Super Vision](https://www.supervision.work/), which builds operational intelligence for multi-location retail from the cameras stores already have. Everything here works without our product: a door counter, your POS and a spreadsheet are enough to start.
+Maintained by [Super Vision](https://www.supervision.work/), AI-powered operational intelligence and optimization for multi-location retail: it turns the cameras stores already have into evidence, then helps operators simulate, test and measure changes before rolling them out. Everything here works without our product: a door counter, your POS and a spreadsheet are enough to start.
 
 ## Contents
 
@@ -43,6 +43,8 @@ Report the peak-hour maximum and the hour it happened next to the daily average 
 Full guide: [Customer-to-staff ratio in retail](https://www.supervision.work/guides/customer-to-staff-ratio/)
 
 Further reading: [Customer-to-staff ratio in retail: your daily number is hiding your worst two hours](https://www.linkedin.com/pulse/customer-to-staff-ratio-retail-your-daily-number-hiding-maddy-sukoru-qronc/) (LinkedIn article by Maddy Sukoru)
+
+Further reading on peak-hour understaffing: [Retail understaffing at peak hours: when the forecast is right and the schedule still runs short](https://www.linkedin.com/pulse/retail-understaffing-peak-hours-when-forecast-right-schedule-sukoru-sxptc/) (LinkedIn article by Maddy Sukoru)
 
 ## Checkout wait time
 
