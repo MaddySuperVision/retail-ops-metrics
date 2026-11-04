@@ -99,6 +99,18 @@ Further reading: [Scheduled vs deployed labor in retail: six on the schedule, tw
 - Chuang, Oliva, Perdikaki (2016). Traffic-based labor planning in retail stores. *Production and Operations Management*.
 - Knowledge at Wharton (2019). [Retail's big mistake: slashing payroll cuts into profits](https://knowledge.wharton.upenn.edu/article/retail-staffing-model)
 
+## Testing a store change before rollout
+
+**Control store:** a location that runs as usual during a test so it can stand in for what would have happened without the change. Pick controls before the test starts, matched to the test stores on format, size, register count, traffic by hour and baseline trend.
+
+**Before-and-after comparison:** the metric's average during a change minus its average before it, over the same days and hours, adjusted for traffic and day of week. Without a control store it reports an observed change, not a cause.
+
+**Test minus control (difference in differences):** the test stores' change minus the control stores' change over the same weeks. Example (hypothetical): -16 minutes at test stores, -5 at control stores, effect -11 minutes.
+
+**Projected, observed and validated impact:** projected comes from a model of your own history, observed from a before-and-after comparison, validated from a test against comparable control stores. Only validated supports a fleet-wide decision.
+
+Full guide: [How to test a retail store change before rolling it out](https://www.supervision.work/guides/test-store-change-before-rollout/)
+
 ## License
 
 MIT for the code, CC BY 4.0 for the text and templates. Use them, change them, share them.
